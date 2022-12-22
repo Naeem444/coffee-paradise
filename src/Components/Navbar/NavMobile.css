@@ -1,0 +1,44 @@
+@media (max-width: 480px) {
+    .navbar-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background: #f2f2f2;
+      height: 60px;
+      justify-content: center;
+      
+    }
+    .nav-name{
+        font-size: 0.7em;
+        left: 10px;
+        position: absolute;
+    }
+  
+    .nav-name,
+    .nav-login-signup {
+      display: flex;
+      flex: 1;
+      /* justify-content: space-between; */
+      /* align-items: center; */
+      
+    }
+    .nav-login-signup {
+        display: flex;
+        flex: 1;
+        right: 0;
+        position: absolute;
+        
+    
+      }
+  
+    .nav-elements {
+      order: 2;
+      position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    }
+  }
+  
