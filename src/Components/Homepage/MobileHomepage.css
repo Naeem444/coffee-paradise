@@ -1,0 +1,26 @@
+@media (max-width:480px){
+    .Landing-page-background{
+        color: #ffff;
+        background-image: url('/public/images/landing-page-background-coffee.jpg');
+        height: 70vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .Landing-page-background h2{
+        margin: 0;
+        width: 90%;
+        font-size: 2em;
+        text-align: center;
+        top: 65%;
+        
+        position: absolute;
+        font-family: 'Lobster', cursive;
+        font-weight: 400;
+    }
+}

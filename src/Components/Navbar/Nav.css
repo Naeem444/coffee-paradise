@@ -19,6 +19,7 @@
     margin-right: 10px;
     font-weight: 550;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .secondary-btn{
@@ -32,6 +33,7 @@
     margin-right: 10px;
     font-weight: 550;
     font-size: 14px;
+    cursor: pointer;
 }
 .nav-elements button{
     padding: 15px 15px;
@@ -60,7 +62,6 @@
 }
 
 .nav-elem-line::before{
-
     background-color: rgba(112,53,11,1);
     width: 0%;
     bottom: -10px;

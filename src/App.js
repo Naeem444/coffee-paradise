@@ -1,4 +1,5 @@
 import './App.css';
+import Homepage from './Components/Homepage/Homepage';
 import Nav from './Components/Navbar/Nav';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       
       <Nav></Nav>
       
+      <Homepage></Homepage>
 
 
       
