@@ -6,6 +6,7 @@
       background: #f2f2f2;
       height: 60px;
       justify-content: center;
+      padding: 0;
       
     }
     .nav-name{
@@ -17,28 +18,108 @@
     .nav-name,
     .nav-login-signup {
       display: flex;
-      flex: 1;
-      /* justify-content: space-between; */
-      /* align-items: center; */
-      
+      justify-content: space-between;
     }
     .nav-login-signup {
         display: flex;
-        flex: 1;
+
         right: 0;
         position: absolute;
-        
-    
+
       }
+      .primary-btn{
+        background: rgba(112,53,11,1);
+        padding: 8px 10px;
+        color: #ffff;
+        border: 1px solid rgba(112,53,11,0.5);
+        outline: none;
+        border-radius: 25px;
+        margin-right: 10px;
+        font-weight: 550;
+        font-size: 12px;
+    }
+    
+    .secondary-btn{
+        background: #f2f2f2;
+    
+        padding: 8px 10px;
+        color: #000000;
+        border: 1px solid rgba(112,53,11,0.5);
+        outline: none;
+        border-radius: 25px;
+        margin-right: 10px;
+        font-weight: 550;
+        font-size: 12px;
+    }
   
     .nav-elements {
-      order: 2;
-      position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
+        order: 2;
+        position: fixed;
+        
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
     }
+    .nav-elements button{
+        padding: 15px 15px;
+        border: none;
+        outline: none;
+        background-color: #f2f2f2;
+        color: #000000;
+        font-weight: 550;
+        cursor: pointer;
+        font-size: 14px;
+       
+    }
+
+    .home-btn{
+        border-radius: 25px 0 0 25px;
+    }
+    .blogs-btn{
+        border-radius: 0 25px 25px 0;
+    }
+
+    /* won't display these for small screens */
+    .nav-elem{
+        position: relative;
+        
+    }
+    
+    
+    .nav-elem::before {
+        transition: 300ms;
+        height: 5px;
+        content: "";
+        position: absolute;
+        display: none;
+        
+    }
+    
+    .nav-elem-line::before{
+    
+        background-color: rgba(112,53,11,1);
+        width: 0%;
+        bottom: -10px;
+        left: 0;
+        display: none;
+    
+    }
+    .nav-elem-line:hover::before{
+        width: 100%;
+        opacity: 1;
+ 
+    }
+
+  
+    
+
+
+
+
   }
   

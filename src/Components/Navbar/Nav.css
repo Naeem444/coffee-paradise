@@ -3,32 +3,75 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    margin: 0 50px;
+    padding: 0 50px;
+    background-color: #f2f2f2;
     
 }
 
 
 .primary-btn{
-    background: linear-gradient(90deg, rgba(112,53,11,1) 53%, rgba(160,118,89,1) 100%);
+    background: rgba(112,53,11,1);
     padding: 10px 20px;
     color: #ffff;
-    border: 1px solid ;
+    border: 1px solid rgba(112,53,11,0.5);
     outline: none;
     border-radius: 25px;
     margin-right: 10px;
     font-weight: 550;
+    font-size: 14px;
 }
 
 .secondary-btn{
     background: #f2f2f2;
 
-    padding: 9px 20px;
-    color: #000000;
-    outline: 1px solid rgba(112,53,11,1);
-    border: none;
+    padding: 10px 20px;
+    color: rgba(112,53,11,1);
+    border: 1px solid rgba(112,53,11,0.5);
+    outline: none;
     border-radius: 25px;
     margin-right: 10px;
     font-weight: 550;
+    font-size: 14px;
+}
+.nav-elements button{
+    padding: 15px 15px;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-weight: 550;
+    font-size: 16px;
+    cursor: pointer;
+    
+    
+}
+/* Adding underline effect for nav elements */
+.nav-elem{
+    position: relative;
+    
+}
+
+
+.nav-elem::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    
+}
+
+.nav-elem-line::before{
+
+    background-color: rgba(112,53,11,1);
+    width: 0%;
+    bottom: -10px;
+    left: 0;
+
+}
+.nav-elem-line:hover::before{
+    width: 100%;
+    opacity: 1;
+   
+
 }
 
 

@@ -14,10 +14,10 @@ const Nav = () => {
             </div>
 
             <div className="nav-elements">
-                <NavLink><button>Home</button></NavLink>
-                <NavLink><button>Reviews</button></NavLink>
-                <NavLink><button>Analytics</button></NavLink>
-                <NavLink><button>Blogs</button></NavLink>
+                <NavLink><button className='home-btn nav-elem nav-elem-line nav-element-active'>Home</button></NavLink>
+                <NavLink><button className='nav-elem nav-elem-line'>Reviews</button></NavLink>
+                <NavLink><button className='nav-elem nav-elem-line'>Analytics</button></NavLink>
+                <NavLink><button className='blogs-btn nav-elem nav-elem-line'>Blogs</button></NavLink>
 
             </div>
             
