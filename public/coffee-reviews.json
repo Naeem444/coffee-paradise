@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "6370c9b8b140962303ff0ab0",
+    "userImg": "images/default-user.png",
+    "name": "Leanne Graham",
+    "productName": "Latte",
+    "review": "Authentic taste. I loved the latte. I will try more coffees from coffee paradise. ",
+    "productImg": "https://source.unsplash.com/vfiA7rRtjWo",
+    "dateOfReview": "20 December, 2022",
+    "ratings": 4.7
+  },
+  {
+    "_id": "6370c9b88a612822c3a65023",
+    "userImg": "images/default-user.png",
+    "name": "Ervin Howell",
+    "productName": "Cuppaccino",
+    "review": "The texture, fragrance and the after taste is all classy!! This doesn’t even need frothing.. simple stirring, makes it creamy and lathered.. love the taste.. some might find it too sweet or less strong.",
+    "productImg": "https://source.unsplash.com/HnGNMt8sjnU",
+    "dateOfReview": "10 December, 2022",
+    "ratings": 4.3
+  },
+  {
+    "_id": "6370c9b84aa98b8edeb0431f",
+    "userImg": "images/default-user.png",
+    "name": "Clementine Bauch",
+    "productName": "Americano",
+    "review": "Authentic taste. I loved the latte. I will try more coffees from coffee paradise. ",
+    "productImg": "https://source.unsplash.com/vfiA7rRtjWo",
+    "dateOfReview": "29 December, 2022",
+    "ratings": 4.5
+  },
+  {
+    "_id": "6370c9b8eb98a19b15721d5d",
+    "userImg": "images/default-user.png",
+    "name": "Patricia Lebsack",
+    "productName": "Espresso",
+    "review": "Taste great everytime. I ordered it online. Coffee came within 15 mins. It was hot and overall satisfied.",
+    "productImg": "https://source.unsplash.com/jn-HaGWe4yw",
+    "dateOfReview": "15 December, 2022",
+    "ratings": 4.8
+  },
+  {
+    "_id": "6370c9b81ce418247a84e665",
+    "userImg": "images/default-user.png",
+    "name": "Jess Clarke",
+    "productName": "Chocolate Cookie",
+    "review": "I really loved the cookie but their delivery was little bit late. Overall average ratings from me.",
+    "productImg": "https://source.unsplash.com/oNkGRiIUXh8",
+    "dateOfReview": "9 December, 2022",
+    "ratings": 4.2
+  },
+  {
+    "_id": "6370c9b83adf89202d47d04d",
+    "userImg": "images/default-user.png",
+    "name": "Chelsey Dietrich",
+    "productName": "Dark Mocha",
+    "review": "Loved the taste. Their service was awful. I guess due to their extra orders in the peak hour. Overall taste was amazing. I will visit here more. ",
+    "productImg": "https://source.unsplash.com/Q0ufkONYaDc",
+    "dateOfReview": "5 December, 2022",
+    "ratings": 3.7
+  },
+  {
+    "_id": "6370c9b831b2923e8d80be26",
+    "userImg": "images/default-user.png",
+    "name": " Dennis Schulist",
+    "productName": "Strawberry Shake",
+    "review": "Authentic strawberry. Strong flavour. Perfect combination. Its a new edition in their menu. But service was not quite good. I waited 35 mins. Maybe for peak hour rush. ",
+    "productImg": "https://source.unsplash.com/gZ2CdzkxWRE",
+    "dateOfReview": "18 December, 2022",
+    "ratings": 3.9
+  },
+  {
+    "_id": "6370c9b88bcfe75e9936a32d",
+    "userImg": "images/default-user.png",
+    "name": "Kurtis Weissnat",
+    "productName": "Brownie",
+    "review": "This brownie was out of the world. Loved the texture and it was soft. There was caramelized chocolate inside the brownie and ice cream on the top. Overall great. I recommend it.",
+    "productImg": "https://source.unsplash.com/Wq0tcKzIa0M",
+    "dateOfReview": "2 December, 2022",
+    "ratings": 4.4
+  },
+  {
+    "_id": "6370c9b88bcfe75e9936a32d",
+    "userImg": "images/default-user.png",
+    "name": "Glenna Reichert",
+    "productName": "Iced Tea",
+    "review": "Amazing taste. Great refreshment. Their service which I got was amazing. Waited only 10 mins to get it. I strongly recommend it. ",
+    "productImg": "https://source.unsplash.com/Byh_SNzWnI4",
+    "dateOfReview": "17 November, 2022",
+    "ratings": 4.8
+  }
+]

@@ -1,4 +1,5 @@
 import React from 'react';
+import HomepageReviws from '../HomepageReviews/HomepageReviws';
 import './Homepage.css';
 import "./MobileHomepage.css"
 
@@ -14,6 +15,9 @@ const Homepage = () => {
             <div className='home-review-container'>
 
                 <h2>Reviews of Coffees</h2>
+                <div>
+                    <HomepageReviws></HomepageReviws>
+                </div>
 
 
 
