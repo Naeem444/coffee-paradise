@@ -1,0 +1,61 @@
+.homepage-review-card{
+    border: 1px solid #f2f2f2;
+    width: 600px;
+    margin: 20px;
+    padding-right: 10px;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+.homepage-review-card-userDetail {
+    display: flex;
+    align-items: center;
+
+}
+.homepage-review-card-userDetail img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+.homepage-review-card-userDetail h4{
+    margin: 0px 5px 0px 5px;
+}
+
+.verified-user a{
+    text-decoration: none;
+    font-size: 11px;
+    padding: 4px 6px;
+    border-radius: 25px;
+    color: #ffff;
+    background-color: #34B233;
+}
+
+.homepage-user-review{
+    margin-left: 70px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 5px 10px;
+    
+
+}
+.homepage-review-ratings{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 70px;
+}
+.homepage-review-date{
+    color: #6c757d;
+    margin: 2px 70px;
+    font-size: 0.8em;
+    position: absolute;
+    top: 45px;
+}
+
+.homepage-user-review img{
+    width: 75px;
+}
+
+

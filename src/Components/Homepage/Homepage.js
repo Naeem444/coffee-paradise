@@ -1,5 +1,5 @@
 import React from 'react';
-import HomepageReviws from '../HomepageReviews/HomepageReviws';
+import HomepageReviews from '../HomepageReviews/HomepageReviews';
 import './Homepage.css';
 import "./MobileHomepage.css"
 
@@ -16,7 +16,7 @@ const Homepage = () => {
 
                 <h2>Reviews of Coffees</h2>
                 <div>
-                    <HomepageReviws></HomepageReviws>
+                    <HomepageReviews></HomepageReviews>
                 </div>
 
 
