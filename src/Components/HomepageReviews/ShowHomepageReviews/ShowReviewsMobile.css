@@ -1,0 +1,94 @@
+@media (max-width:480px) {
+    .homepage-review-card{
+        border: 1px solid #f2f2f2;
+        width: 93%;
+        margin: 20px;
+        padding-right: 10px;
+        border-radius: 15px;
+        position: relative;
+    
+    }
+    
+    .homepage-review-card-userDetail {
+        display: flex;
+        align-items: center;
+    
+    }
+    .homepage-review-card-userDetail img{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        margin: 7px 9px;
+    }
+    .homepage-review-card-userDetail h4{
+        margin: 0px 5px 0px 5px;
+    }
+    
+    .verified-user a{
+        text-decoration: none;
+        font-size: 9px;
+        padding: 3px 5px;
+        border-radius: 25px;
+        color: #ffff;
+        background-color: #34B233;
+        font-weight: 500;
+    }
+
+    .homepage-user-review{
+        margin-left: 58px;
+        margin-bottom: 20px;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        padding: 5px 10px;
+        
+    
+    }
+    .homepage-user-review h4{
+        margin: 5px 0;
+        font-size: 1em;
+    }
+    .homepage-user-review p{
+        font-size: 14px;
+    }
+    
+    .homepage-review-ratings{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 58px;
+        color: #000000;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+    
+    .homepage-review-ratings span{
+        color: rgb(245, 163, 12);
+    }
+    .homepage-review-date{
+        color: #6c757d;
+        margin: 2px 58px;
+        font-size: 0.7em;
+        position: absolute;
+        top: 33px;
+    }
+
+    .homepage-user-review img{
+        width: 55px;
+    }
+    
+    .load-more-homepage button{
+        padding: 10px 20px;
+        margin: 10px 0 65px 0;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        color: #ffff;
+        background-color: #70350B;
+        font-size: 12px;
+        font-weight: 550px;
+        cursor: pointer;
+    }
+    
+
+
+    
+}

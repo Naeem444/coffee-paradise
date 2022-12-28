@@ -1,5 +1,8 @@
 import React from 'react';
 import './ShowHomepageReviews.css';
+import './ShowReviewsMobile.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faCircleCheck, faStar} from '@fortawesome/free-solid-svg-icons'
 
 
 const ShowHomepageReviews = (props) => {
@@ -11,13 +14,14 @@ const ShowHomepageReviews = (props) => {
                 <img src={userImg} alt='user'></img>
                 <h4>{name}</h4>
                 <div className='verified-user'>
-                    <a href='##'>verified</a>
+                    <a href='##'>verified purchase <FontAwesomeIcon icon={faCircleCheck} /></a>
 
                 </div>
 
             </div>
             <p className='homepage-review-date'>{dateOfReview}</p>
-            <p className='homepage-review-ratings'>Ratings: {ratings}</p>
+            <p className='homepage-review-ratings'>
+                <span><FontAwesomeIcon icon={faStar}/></span> {ratings}</p>
  
             <div className='homepage-user-review'>
                 <h4>{productName}</h4>

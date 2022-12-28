@@ -23,4 +23,7 @@
         font-family: 'Lobster', cursive;
         font-weight: 400;
     }
+    .homepage-review-card-container{
+        margin-bottom: 60px;
+    }
 }

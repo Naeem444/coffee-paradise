@@ -30,6 +30,7 @@
     border-radius: 25px;
     color: #ffff;
     background-color: #34B233;
+    font-weight: 500;
 }
 
 .homepage-user-review{
@@ -41,10 +42,19 @@
     
 
 }
+.homepage-user-review h4{
+    margin: 5px 0;
+}
+
 .homepage-review-ratings{
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 70px;
+    color: #000000;
+}
+
+.homepage-review-ratings span{
+    color: rgb(245, 163, 12);
 }
 .homepage-review-date{
     color: #6c757d;
@@ -58,4 +68,16 @@
     width: 75px;
 }
 
+.load-more-homepage button{
+    padding: 15px 30px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: #ffff;
+    background-color: #70350B;
+    font-size: 15px;
+    font-weight: 550px;
+    cursor: pointer;
+}
 
