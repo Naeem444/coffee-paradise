@@ -14,16 +14,22 @@ const Nav = () => {
             </div>
 
             <div className="nav-elements">
-                <NavLink><button className='home-btn nav-elem nav-elem-line nav-element-active'>Home</button></NavLink>
-                <NavLink><button className='nav-elem nav-elem-line'>Reviews</button></NavLink>
-                <NavLink><button className='nav-elem nav-elem-line'>Analytics</button></NavLink>
-                <NavLink><button className='blogs-btn nav-elem nav-elem-line'>Blogs</button></NavLink>
+                <NavLink to='/' ><button className='home-btn nav-elem nav-elem-line nav-element-active'>Home</button></NavLink>
+
+
+                <NavLink to='/reviews'><button className='nav-elem nav-elem-line'>Reviews</button></NavLink>
+
+
+                <NavLink to='/analytics'><button className='nav-elem nav-elem-line'>Analytics</button></NavLink>
+
+
+                <NavLink to='/blogs'><button className='blogs-btn nav-elem nav-elem-line'>Blogs</button></NavLink>
 
             </div>
             
             <div  className="nav-login-signup">
-            <Link><button className='secondary-btn'>Login</button></Link>
-            <Link><button className='primary-btn'>Sign Up</button></Link>
+            <Link to='/login'><button className='secondary-btn'>Login</button></Link>
+            <Link to='/signup'><button className='primary-btn'>Sign Up</button></Link>
 
             </div>
 
