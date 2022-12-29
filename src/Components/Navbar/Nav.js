@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse , faChartLine, faComments, faNewspaper} from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Nav.css';
@@ -14,16 +16,87 @@ const Nav = () => {
             </div>
 
             <div className="nav-elements">
-                <NavLink to='/' ><button className='home-btn nav-elem nav-elem-line nav-element-active'>Home</button></NavLink>
+                
+                <NavLink to='/'>
+               
+                    {
+                        ({isActive})=>(
+                            <button
+                            className={isActive? 'nav-elements-btn home-btn nav-elem nav-element-active ' : 'nav-elements-btn home-btn nav-elem nav-elem-line'}>
+
+                                
+                                {
+                                    window.innerWidth > 480 ? <span>Home</span>: <span>
+                                        <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>
+                                        <small>Home</small>
+                                        
+                                        </span>
+                                }
+
+                        </button>
+                        )
+                    }
+                    
+                </NavLink>
 
 
-                <NavLink to='/reviews'><button className='nav-elem nav-elem-line'>Reviews</button></NavLink>
+                <NavLink to='/reviews'>
+                    {
+                        ({isActive})=>(
+                            <button
+                            className={isActive? 'nav-elements-btn nav-elem nav-element-active' : 'nav-elements-btn nav-elem nav-elem-line'}>
+
+{
+                                    window.innerWidth > 480 ? <span>Reviews</span>: <span>
+                                        <FontAwesomeIcon icon={faComments}></FontAwesomeIcon>
+                                        
+                                        <small>Reviews</small>
+                                        
+                                        </span>
+                                }
+
+                            </button>
+                        )
+                    }
+                </NavLink>
 
 
-                <NavLink to='/analytics'><button className='nav-elem nav-elem-line'>Analytics</button></NavLink>
+                <NavLink to='/analytics'>
+                {
+                        ({isActive})=>(
+                            <button
+                            className={isActive? 'nav-elements-btn nav-elem nav-element-active' : 'nav-elements-btn nav-elem nav-elem-line'}>
+
+{
+                                    window.innerWidth > 480 ? <span>Analytics</span>: <span>
+                                        <FontAwesomeIcon icon={faChartLine}></FontAwesomeIcon>
+                                        <small>Analytics</small>
+                                        </span>
+                                }
+
+                            </button>
+                        )
+                    }
+                </NavLink>
 
 
-                <NavLink to='/blogs'><button className='blogs-btn nav-elem nav-elem-line'>Blogs</button></NavLink>
+                <NavLink to='/blogs'>
+                    {
+                        ({isActive})=>(
+                            <button
+                            className={isActive? 'nav-elements-btn blogs-btn nav-elem nav-element-active' : 'nav-elements-btn blogs-btn nav-elem nav-elem-line'}>
+
+{
+                                    window.innerWidth > 480 ? <span>Blogs</span>: <span>
+                                        <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>
+                                        <small>Blogs</small>
+                                        </span>
+                                }
+
+                            </button>
+                        )
+                    }
+                </NavLink>
 
             </div>
             
@@ -32,8 +105,6 @@ const Nav = () => {
             <Link to='/signup'><button className='primary-btn'>Sign Up</button></Link>
 
             </div>
-
-        
             
         </div>
     );

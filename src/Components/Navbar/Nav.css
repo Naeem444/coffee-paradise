@@ -35,7 +35,7 @@
     font-size: 14px;
     cursor: pointer;
 }
-.nav-elements button{
+.nav-elements-btn{
     padding: 15px 15px;
     border: none;
     outline: none;
@@ -49,7 +49,6 @@
 /* Adding underline effect for nav elements */
 .nav-elem{
     position: relative;
-    
 }
 
 
@@ -72,7 +71,16 @@
     width: 100%;
     opacity: 1;
    
-
 }
 
+
+.nav-element-active::before{
+    background-color: rgba(112,53,11,1);
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    
+
+}  
+    
 
