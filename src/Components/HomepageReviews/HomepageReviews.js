@@ -15,7 +15,7 @@ const HomepageReviews = () => {
     // handling 'load more'
     const handleLoadMore=(state)=>{
         setLoad(state);
-        console.log("Hey Even handler is working wohoooooooo");
+
 
     }
     
