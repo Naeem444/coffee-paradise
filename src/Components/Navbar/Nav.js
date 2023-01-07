@@ -10,13 +10,10 @@ const Nav = () => {
     return (
         <div className='navbar-container'>
             <div className="nav-name">
-                <h2>Coffee Paradise </h2>
-
-
+                <h2>Coffee <span>Paradise</span></h2>
             </div>
 
             <div className="nav-elements">
-                
                 <NavLink to='/'>
                
                     {
@@ -101,8 +98,8 @@ const Nav = () => {
             </div>
             
             <div  className="nav-login-signup">
-            <Link to='/login'><button className='secondary-btn'>Login</button></Link>
-            <Link to='/signup'><button className='primary-btn'>Sign Up</button></Link>
+                <Link to='/login'><button className='secondary-btn'>Login</button></Link>
+                <Link to='/signup'><button className='primary-btn'>Sign Up</button></Link>
 
             </div>
             

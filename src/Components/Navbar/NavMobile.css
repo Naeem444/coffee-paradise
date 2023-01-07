@@ -1,37 +1,45 @@
 @media (max-width: 480px) {
+    /* This container will make the flex-direction into column. So, 2 divs will be on the top navbar and other div will be placed in the bottom */
     .navbar-container {
       display: flex;
       flex-direction: column;
       position: relative;
-      background: #f2f2f2;
-      height: 60px;
       justify-content: center;
       padding: 0;
-
-      
     }
+
     .nav-name{
         font-size: 0.7em;
-        left: 10px;
-        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 10px;
+        z-index: 2;
+        /* to apply the bg color and position itself, allocated 40% of the top navbar*/
+        width: 40%; 
     }
   
-    .nav-name,
-    .nav-login-signup {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    
-      
-      
-    }
+   
     .nav-login-signup {
         display: flex;
-
+        justify-content: flex-end;
         right: 0;
-        position: absolute;
-
+        top: 0;
+         /* to apply the bg color and position itself, allocated 40% of the top navbar*/
+        width: 60%;
+ 
       }
+      /* merging 2 divs into the top navbar. They will take 40%+60%=100% space of the top navbar. Nav-name will remain at left and buttons will remain at the flex-end */
+      .nav-name,
+      .nav-login-signup {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+        background: #f2f2f2;
+        height: 60px;
+   
+      }
+
       .primary-btn{
         background: rgba(112,53,11,1);
         padding: 8px 10px;
@@ -56,7 +64,7 @@
         font-weight: 550;
         font-size: 12px;
     }
-  
+     /* This div will work like a bottom navbar as it has been given a order. Remainaing 2 divs will stay at the top */
     .nav-elements {
         order: 2;
         position: fixed;
@@ -115,6 +123,7 @@
         display: none;
     
     }
+
     .nav-element-active{
         padding: 12px 15px;
         border: none;
@@ -130,13 +139,6 @@
         display: flex;
         flex-direction: column;
     }
-
-
-  
-    
-
-
-
 
   }
   

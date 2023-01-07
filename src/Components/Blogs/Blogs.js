@@ -22,9 +22,9 @@ const Blogs = () => {
             <h1>
             Difference between inline, block, inline-block elements
                 </h1>
-                <small>Md.Naeemur Rahman <FontAwesomeIcon className='circle-icon' icon={faCircle}></FontAwesomeIcon> 1 min read </small>
+                <small>Md.Naeemur Rahman  <FontAwesomeIcon className='circle-icon' icon={faCircle}></FontAwesomeIcon> 1 min read </small>
                 <p>
-                n HTML, elements can be displayed in four different ways:
+                In HTML, elements can be displayed in four different ways:
 
                     1. Inline: Inline elements are elements that are placed inline with the text. They only take up as much width as needed, and they do not create a new line after the element. Examples of inline elements include the a, span, and img tags.
 
@@ -40,7 +40,7 @@ const Blogs = () => {
             <h1>
             Quick Overview of Semantic Tags in HTML
                 </h1>
-                <small>Md.Naeemur Rahman <FontAwesomeIcon className='circle-icon' icon={faCircle}></FontAwesomeIcon> 1 min read </small>
+                <small>Md.Naeemur Rahman  <FontAwesomeIcon className='circle-icon' icon={faCircle}></FontAwesomeIcon> 1 min read </small>
                 <p>
                 In HTML, semantic tags are tags that accurately describe the content they contain. Using semantic tags helps to improve the accessibility and SEO of a webpage, as well as making the code easier to read and understand.
 
