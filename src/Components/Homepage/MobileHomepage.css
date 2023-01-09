@@ -25,5 +25,9 @@
     }
     .homepage-review-card-container{
         margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
