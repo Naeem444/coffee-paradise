@@ -4,14 +4,58 @@
     align-items: center;
     justify-content: center;
 
+    
+
 
 }
 
+.signup-box{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+}
 
+.signup-data-fields{
+    height: 40px;
+    width: 230px;
+    padding-left: 20px;
+    border: 1px solid darkgray;
+    border-radius: 25px;
+    outline: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    margin: 10px 0;
+}
+
+.signup-btn{
+    height: 40px;
+    width: 254px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    
+    cursor: pointer;
+    background-color: #70350b;
+    color: #ffff;
+
+    margin: 10px 0 20px 0;
+
+}
 
 .google-sign-in{
-    height: 45px;
-    width: 250px;
+    height: 40px;
+    width: 254px;
     border: 1px solid darkgray;
     border-radius: 25px;
     outline: none;
@@ -21,6 +65,7 @@
     background-color: #ffff;
     
     cursor: pointer;
+    margin: 20px 0 10px 0;
    
     
     
@@ -30,12 +75,12 @@
 }
 
 .google-sign-in img{
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
 }
 
 .google-sign-in p{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 750px;
     color: #000000;
 }

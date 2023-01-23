@@ -1,5 +1,5 @@
 import React from 'react';
-import {getAuth, GoogleAuthProvider, signInWithPopup} from "firebase/auth"
+import {getAuth, GithubAuthProvider, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword} from "firebase/auth"
 import { Link } from 'react-router-dom';
 import firebaseApp from '../Authentication/init';
 import './SignUp.css'
@@ -9,15 +9,16 @@ const auth = getAuth(firebaseApp);
 const SignUp = () => {
 
     //google sign up provider
-    const googleSigninProvider = new GoogleAuthProvider();
+    const googleProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
 
     //handle google signup
     const handleGoogleSignin=()=>{
 
-        signInWithPopup(auth, googleSigninProvider)
+        signInWithPopup(auth, googleProvider)
         .then(result =>{
             const user = result.user;
-            console.log(user);
+            console.log("Sign in with google is successful");
             
 
         })
@@ -27,8 +28,56 @@ const SignUp = () => {
 
     }
 
+
+    // const handleGithubSignin=()=>{
+
+    //     signInWithPopup(auth, githubProvider)
+    //     .then(result =>{
+    //         const user = result.user;
+    //         console.log("Sign in with google is successful");
+            
+    //     })
+    //     .catch(error =>{
+    //         console.error("error occured: " + error);
+    //     })
+
+    // }
+
+    const handleSignupSubmit = event =>{
+        event.preventDefault();
+        const email = event.target.emailField.value;
+        const password = event.target.passwordField.value;
+        
+        createUserWithEmailAndPassword(auth, email, password)
+        .then(userDetails =>{
+            //sign in 
+            const user = userDetails.user;
+            console.log("Sign in successful")
+            
+        })
+        .catch(error =>{
+            console.log("Error occured: ", error)
+        })
+    }
+
+
     return (
         <div className='signup-container'>
+
+            {/* signup form */}
+
+            <div className='signup-box'>
+                <h3>Register to Coffee <span style={{color: '#70350b'}}>Paradise</span></h3>
+            <form onSubmit={handleSignupSubmit}>
+                <input type="email" placeholder="Enter Your Email" name='emailField' className='signup-data-fields'></input>
+                
+                <input type="password" placeholder="Enter Your password" name='passwordField' className='signup-data-fields'></input>
+                
+                <button type='submit' className='signup-btn'>Sign up</button>
+            </form>
+            <small style={{color: '#585858'}}>or</small>
+
+
 
             <Link className='link'><button className='google-sign-in' onClick={handleGoogleSignin}>
             <img src="images/google-logo.png" alt="google-logo"></img>
@@ -38,6 +87,14 @@ const SignUp = () => {
             </button>
             
             </Link>
+
+
+            {/* tried this for integration practice purpose */}
+            {/* <Link>
+                <button onClick={handleGithubSignin}>Sign in with github</button>
+            
+            </Link> */}
+            </div>
             
         </div>
     );
