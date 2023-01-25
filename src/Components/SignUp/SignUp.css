@@ -19,6 +19,11 @@
     border: 1px solid #dbdbdb;
     border-radius: 20px;
 }
+.signup-form{
+    display:flex;
+    flex-direction:column;
+    
+}
 
 .signup-data-fields{
     height: 40px;

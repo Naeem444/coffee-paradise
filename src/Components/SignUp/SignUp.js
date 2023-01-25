@@ -3,6 +3,8 @@ import {getAuth, GithubAuthProvider, GoogleAuthProvider, signInWithPopup, create
 import { Link } from 'react-router-dom';
 import firebaseApp from '../Authentication/init';
 import './SignUp.css'
+import { faCircleCheck} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const auth = getAuth(firebaseApp);
 
@@ -44,9 +46,12 @@ const SignUp = () => {
     // }
 
     const [passError, setPassError] = useState('');
+    const [success, setSuccess] = useState(false);
+
 
     const handleSignupSubmit = event =>{
         event.preventDefault();
+        setSuccess(false);
         const email = event.target.emailField.value;
         const password = event.target.passwordField.value;
 
@@ -64,13 +69,22 @@ const SignUp = () => {
         
         createUserWithEmailAndPassword(auth, email, password)
         .then(userDetails =>{
+            //user created successfully
+            setSuccess(true);
+            //makes the data fields empty
+            event.target.reset();
+
+
             //sign in 
             const user = userDetails.user;
             console.log("Sign in successful")
+
+
             
         })
         .catch(error =>{
             console.log("Error occured: ", error)
+            setPassError("Email address already in use");
         })
     }
 
@@ -86,7 +100,8 @@ const SignUp = () => {
                 <input type="email" placeholder="Enter Your Email" name='emailField' className='signup-data-fields'></input>
              
                 <input type="password" placeholder="Enter Your password" name='passwordField' className='signup-data-fields' style={passError !== '' ? {border: '1px solid #b71c1c'} : {border: "1px solid darkgray"}}></input>
-                <small style={{color: '#b71c1c'}}>{passError}</small>
+                <small style={{color: '#b71c1c', width: "254px", fontWeight: "550"}}>{passError}</small>
+                {success && <small style={{color: '#198754', fontWeight: "550", width: "254px"}}>Signup completed successfully <FontAwesomeIcon icon={faCircleCheck} /></small>}
                 
                 <button type='submit' className='signup-btn'>Sign up</button>
             </form> 
