@@ -56,12 +56,13 @@ const SignUp = () => {
         const password = event.target.passwordField.value;
 
         //pass validation
-        if (!/(?=.*[!@#$%^&*])/.test(password)){
-            setPassError("password should have at least one special character")
+        
+        if (password.length < 6){
+            setPassError("password should have at least 6 characters")
             return;
         }
-        else if (password.length < 6){
-            setPassError("password should have at least 6 characters")
+        else if (!/(?=.*[!@#$%^&*])/.test(password)){
+            setPassError("password should have at least one special character")
             return;
         }
         
@@ -100,7 +101,10 @@ const SignUp = () => {
                 <input type="email" placeholder="Enter Your Email" name='emailField' className='signup-data-fields'></input>
              
                 <input type="password" placeholder="Enter Your password" name='passwordField' className='signup-data-fields' style={passError !== '' ? {border: '1px solid #b71c1c'} : {border: "1px solid darkgray"}}></input>
+
+                {/* error msg */}
                 <small style={{color: '#b71c1c', width: "254px", fontWeight: "550"}}>{passError}</small>
+                 {/* success msg */}
                 {success && <small style={{color: '#198754', fontWeight: "550", width: "254px"}}>Signup completed successfully <FontAwesomeIcon icon={faCircleCheck} /></small>}
                 
                 <button type='submit' className='signup-btn'>Sign up</button>
@@ -112,11 +116,12 @@ const SignUp = () => {
             <Link className='google-signin-anchor link'><button className='google-sign-in' onClick={handleGoogleSignin}>
             <img src="images/google-logo.png" alt="google-logo"></img>
 
-            <p>Sign in with google</p> 
+            <p>Sign up with google</p> 
                 
             </button>
             
             </Link>
+            <small>Already have an account? Please <Link to="/login" style={{color: '#70350b', fontWeight: "550"}}>Login</Link></small>
 
                
 

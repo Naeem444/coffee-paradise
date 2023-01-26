@@ -7,6 +7,7 @@ import Blogs from './Components/Blogs/Blogs'
 import Reviews from './Components/Reviews/Reviews'
 import Analytics from './Components/Analytics/Analytics';
 import SignUp from './Components/SignUp/SignUp';
+import Login from './Components/Login/Login';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
 
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        
+        <Route path='/login' element={<Login></Login>}></Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
