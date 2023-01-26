@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {getAuth, GithubAuthProvider, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword} from "firebase/auth"
+import {getAuth, GithubAuthProvider, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, sendEmailVerification} from "firebase/auth"
 import { Link } from 'react-router-dom';
 import firebaseApp from '../Authentication/init';
 import './SignUp.css'
@@ -72,6 +72,7 @@ const SignUp = () => {
         .then(userDetails =>{
             //user created successfully
             setSuccess(true);
+            verifyEmail();
             //makes the data fields empty
             event.target.reset();
 
@@ -87,6 +88,17 @@ const SignUp = () => {
             console.log("Error occured: ", error)
             setPassError("Email address already in use");
         })
+    }
+
+    const verifyEmail =()=>{
+
+        sendEmailVerification(auth.currentUser)
+        .then(()=>{
+            //email sent
+            console.log("Verification email sent successfully")
+        })
+
+
     }
 
 

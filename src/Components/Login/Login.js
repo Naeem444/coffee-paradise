@@ -31,6 +31,9 @@ const Login = () => {
             setSuccess(true);
             const user = result.user;
 
+
+            form.reset();
+
         })
         .catch(error =>{
             setPassError("Error occured: please provide correct credentials");
