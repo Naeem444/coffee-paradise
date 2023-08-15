@@ -5,16 +5,13 @@ import "./Shop.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 import CartModal from '../CartModal/CartModal';
+import useFetchedData from '../../Hooks/useFetchedData';
 
 const Shop = () => {
-    const [products, setProduct] = useState([]);
+    const [products, setProduct] = useFetchedData('coffee.json');
     const [cart, setCart] = useState([]);
 
-    useEffect(()=>{
-        fetch("coffee.json")
-        .then(res => res.json())
-        .then(data => setProduct(data))
-    }, [])
+    
 
     //cart data handling
     const handleAddToCart=(selectedProduct)=>{
