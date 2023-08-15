@@ -8,6 +8,7 @@ import Reviews from './Components/Reviews/Reviews'
 import Analytics from './Components/Analytics/Analytics';
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
+import Shop from './Components/Shop/Shop';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       
 
       <Routes>
-        <Route path='/' element={<Homepage></Homepage>}></Route>
+        <Route path='/' element={<Shop></Shop>}></Route>
 
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
 

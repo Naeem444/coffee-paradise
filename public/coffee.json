@@ -1,0 +1,83 @@
+[
+    {
+      "id": "6370c9b8b140962303ff0ab0",
+      "img": "images/Classic-Blend.jpg",
+      "name": "Classic Blend",
+      "description": "A balanced and smooth medium roast coffee blend.",
+      "price": "970",
+      "quantity": "5",
+      "ratings": "4.2"
+    },
+    {
+      "id": "6370c9b88a612822c3a65023",
+      "img": "images/espresso.jpg",
+      "name": "Bold Espresso",
+      "description": "Intense and rich dark roast espresso with a hint of cocoa.",
+      "price": "1250",
+      "quantity": "6",
+      "ratings": "4.1"
+    },
+    {
+      "id": "6370c9b84aa98b8edeb0431f",
+      "img": "images/tarazzu.jpg",
+      "name": "Costa Rican Tarrazú",
+      "description": "Smooth and medium-bodied coffee with notes of caramel and citrus.",
+      "price": "1400",
+      "quantity": "3",
+      "ratings": "4.7"
+    },
+    {
+      "id": "6370c9b8eb98a19b15721d5d",
+      "img": "images/italian-roast.jpg",
+      "name": "Italian Roast",
+      "description": "Dark and intense espresso blend with a smoky aroma.",
+      "price": "1270",
+      "quantity": "7",
+      "ratings": "4.3"
+    },
+    {
+      "id": "6370c9b81ce418247a84e665",
+      "img": "images/french-vanilla.jpg",
+      "name": "French Vanilla Bliss",
+      "description": "Creamy and sweet coffee with a hint of vanilla.",
+      "price": "1020",
+      "quantity": "4",
+      "ratings": "4.2"
+    },
+    {
+      "id": "6370c9b83adf89202d47d04d",
+      "img": "images/antigua.png",
+      "name": "Guatemala Antigua",
+      "description": "Medium-bodied coffee with bright acidity, floral aroma, and hints of spice.",
+      "price": "1700",
+      "quantity": "6",
+      "ratings": "4.1"
+    },
+    {
+      "id": "6370c9b831b2923e8d80be26",
+      "img": "images/marcala.jpg",
+      "name": "Honduran Marcala",
+      "description": "Balanced and versatile coffee with notes of caramel, apple, and mild acidity.",
+      "price": "1280",
+      "quantity": "2",
+      "ratings": "4.3"
+    },
+    {
+      "id": "6370c9b88bcfe75e9936a32d",
+      "img": "images/sidamo.jpg",
+      "name": "Ethiopian Sidamo",
+      "description": "Bright and fruity coffee with floral notes and a wine-like acidity.",
+      "price": "1170",
+      "quantity": "5",
+      "ratings": "3.9"
+    },
+      {
+      "id": "6370c9b88ccfe75e9936a32d",
+      "img": "images/excelso.jpg",
+      "name": "Colombian Excelso",
+      "description": "A versatile coffee known for its medium body, balanced acidity, and caramel and nutty notes.",
+      "price": "1090",
+      "quantity": "3",
+      "ratings": "4"
+    }
+  ]

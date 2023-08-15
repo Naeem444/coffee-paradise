@@ -23,7 +23,7 @@ const Nav = () => {
 
                                 
                                 {
-                                    window.innerWidth > 480 ? <span>Home</span>: <span>
+                                    window.innerWidth > 850 ? <span>Home</span>: <span>
                                         <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>
                                         <small>Home</small>
                                         
@@ -44,7 +44,7 @@ const Nav = () => {
                             className={isActive? 'nav-elements-btn nav-elem nav-element-active' : 'nav-elements-btn nav-elem nav-elem-line'}>
 
 {
-                                    window.innerWidth > 480 ? <span>Reviews</span>: <span>
+                                    window.innerWidth > 850 ? <span>Reviews</span>: <span>
                                         <FontAwesomeIcon icon={faComments}></FontAwesomeIcon>
                                         
                                         <small>Reviews</small>
@@ -65,7 +65,7 @@ const Nav = () => {
                             className={isActive? 'nav-elements-btn nav-elem nav-element-active' : 'nav-elements-btn nav-elem nav-elem-line'}>
 
 {
-                                    window.innerWidth > 480 ? <span>Analytics</span>: <span>
+                                    window.innerWidth > 850 ? <span>Analytics</span>: <span>
                                         <FontAwesomeIcon icon={faChartLine}></FontAwesomeIcon>
                                         <small>Analytics</small>
                                         </span>
@@ -84,7 +84,7 @@ const Nav = () => {
                             className={isActive? 'nav-elements-btn blogs-btn nav-elem nav-element-active' : 'nav-elements-btn blogs-btn nav-elem nav-elem-line'}>
 
 {
-                                    window.innerWidth > 480 ? <span>Blogs</span>: <span>
+                                    window.innerWidth > 850 ? <span>Blogs</span>: <span>
                                         <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>
                                         <small>Blogs</small>
                                         </span>

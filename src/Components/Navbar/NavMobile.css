@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 850px) {
     /* This container will make the flex-direction into column. So, 2 divs will be on the top navbar and other div will be placed in the bottom */
     .navbar-container {
       display: flex;

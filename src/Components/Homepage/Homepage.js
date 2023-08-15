@@ -1,5 +1,10 @@
+// This file is deprecated
+
+
+
 import React from 'react';
 import HomepageReviews from '../HomepageReviews/HomepageReviews';
+import Shop from '../Shop/Shop';
 import './Homepage.css';
 import "./MobileHomepage.css"
 
@@ -14,9 +19,10 @@ const Homepage = () => {
 
             <div className='home-review-container'>
 
-                <h2>Reviews of Coffees</h2>
+                <h2>Buy Your Favourite Coffees</h2>
                 <div>
-                    <HomepageReviews></HomepageReviews>
+                    {/* <HomepageReviews></HomepageReviews> */}
+                    <Shop></Shop>
                 </div>
 
 
